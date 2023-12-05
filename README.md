@@ -16,7 +16,7 @@ docker pull node:9.4.0-alpine  # to make the node displays in the docker images
 
 docker run -dp 8080:8080 myimage:v1 # to run docker container in the 8080 port
 
-curl http://localhost:8080
+Invoke-WebRequest -Uri http://localhost:8080 # this is to curl http://localhost:8080
 
 will be stating
 Content           : Hello world from c4b1be69cb6c! Your app is up and running!
