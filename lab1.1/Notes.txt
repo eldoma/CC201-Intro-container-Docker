@@ -1,0 +1,72 @@
+
+
+
+
+PS C:\Staging\Docker\lab1.1\project\cc201\labs\1_containersanddocker> docker images
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+myimage       v1        51bda4b619e4   13 hours ago   77.4MB
+hello-world   latest    9c7a54a9a43c   7 months ago   13.3kB
+PS C:\Staging\Docker\lab1.1\project\cc201\labs\1_containersanddocker> docker pull node:9.4.0-alpine
+9.4.0-alpine: Pulling from library/node
+605ce1bd3f31: Already exists                                                                                                                                                                                 
+fe58b30348fe: Already exists                                                                                                                                                                                 
+46ef8987ccbd: Already exists                                                                                                                                                                                 
+Digest: sha256:9cd67a00ed111285460a83847720132204185e9321ec35dacec0d8b9bf674adf
+Status: Downloaded newer image for node:9.4.0-alpine
+docker.io/library/node:9.4.0-alpine
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview node:9.4.0-alpine
+PS C:\Staging\Docker\lab1.1\project\cc201\labs\1_containersanddocker> docker images
+REPOSITORY    TAG            IMAGE ID       CREATED        SIZE
+myimage       v1             51bda4b619e4   14 hours ago   77.4MB
+hello-world   latest         9c7a54a9a43c   7 months ago   13.3kB
+node          9.4.0-alpine   b5f94997f35f   5 years ago    68MB
+PS C:\Staging\Docker\lab1.1\project\cc201\labs\1_containersanddocker> 
+
+
+curl http://localhost:8080
+
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : Hello world from c4b1be69cb6c! Your app is up and running!
+
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    Content-Length: 59
+                    Content-Type: text/html; charset=utf-8
+                    Date: Tue, 05 Dec 2023 04:25:07 GMT
+                    ETag: W/"3b-x6gU1MJtdLN+ouBa7LOK8PdedXg"
+                    X-Powered-By: Expres...
+Forms             : {}
+Headers           : {[Connection, keep-alive], [Content-Length, 59], [Content-Type, text/html; charset=utf-8], [Date, Tue, 05 Dec 2023 04:25:07 GMT]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 59
+
+will be putting repo at https://github.com/eldoma/lab1.1-1.2-Intro-container-Docker
+
+git init
+git add .
+git commit -m "Add Docker container with sample html file"
+
+https://github.com/eldoma/lab1.1-1.2-Intro-container-Docker
+
+git remote add origin https://github.com/eldoma/CC201-Intro-container-Docker.git
+
+git push -u origin main
+
+if fail:
+git pull origin main
+
+git config --global user.email "eldoma@gmail.com"
+git config --global user.name "eldoma"
+
+git branch -M main
+git push -u origin main
+
+IF FAIL:
+git remote set-url origin https://github.com/ibm-developer-skills-network/CC201.git
