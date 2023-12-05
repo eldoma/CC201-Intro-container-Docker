@@ -2,7 +2,7 @@
 
 Hands-on Lab: Introduction to Containers, Docker and IBM Cloud Container Registry 
 
-To make a Local Docker, important commands in VS Code,
+To make a Local Docker, observe important commands in VS Code,
 
 VS Code commands for local Docker:
 
